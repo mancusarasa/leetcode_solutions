@@ -8,4 +8,17 @@ The directories are organized following the path suggested by [NeetCode](https:/
 
 # How to run tests
 
-I'll add instructions in the near future to run all tests at once.
+First, install `virtualenv`:
+
+```shell
+$ sudo apt-get install python3-virtualenv # Linux
+$ brew install virtualenv # Mac
+```
+
+Then, create a virtualenv, activate it and install the appropriate requirements:
+
+```shell
+$ mkdir venv && virtualenv --python=python3 venv
+$ . ./venv/bin/activate
+$ pip3 install -r requirements.txt
+```
