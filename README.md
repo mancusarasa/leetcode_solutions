@@ -22,3 +22,9 @@ $ mkdir venv && virtualenv --python=python3 venv
 $ . ./venv/bin/activate
 $ pip3 install -r requirements.txt
 ```
+
+Finally, run the tests:
+
+```shell
+python3 -m pytest -vvv
+```
