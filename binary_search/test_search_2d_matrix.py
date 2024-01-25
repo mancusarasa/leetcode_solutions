@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from .search_2d_matrix import Solution
 
 

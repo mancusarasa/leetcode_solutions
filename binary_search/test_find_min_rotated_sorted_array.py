@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from .find_min_rotated_sorted_array import Solution
 
 

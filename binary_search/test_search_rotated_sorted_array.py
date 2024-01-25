@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from .search_rotated_sorted_array import Solution
 
 
