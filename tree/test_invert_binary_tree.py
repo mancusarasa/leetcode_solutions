@@ -30,3 +30,7 @@ class TestInvertBinaryTree:
         assert new_root.val == 2
         assert new_root.right.val == 1
         assert new_root.left.val == 3
+
+    def test_case_three(self):
+        s = Solution()
+        assert s.invertTree(None) is None
