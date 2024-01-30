@@ -21,6 +21,9 @@ from typing import List
 
 class Solution:
     def findDuplicate(self, nums: List[int]) -> int:
+        # note: this solution is literally the floyd
+        # cycle detection algorithm
+        # https://en.wikipedia.org/wiki/Cycle_detection
         slow = nums[0]
         fast = nums[nums[0]]
         while slow != fast:
