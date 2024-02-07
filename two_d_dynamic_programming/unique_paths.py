@@ -34,3 +34,4 @@ class Solution:
                 M[i][j] = recurse(i+1, j, m, n) + recurse(i, j+1, m, n)
             return M[i][j]
         return recurse(0, 0, m, n)
+        # return factorial(m+n-2) // ( factorial(m-1) * factorial(n-1))
