@@ -6,10 +6,10 @@ class TestCoinChange:
         s = Solution()
         assert s.change(5, [1,2,5]) == 4
 
-    def test_case_(self):
+    def test_case_two(self):
         s = Solution()
         assert s.change(3, [2]) == 0
 
-    def test_case_(self):
+    def test_case_three(self):
         s = Solution()
         assert s.change(10, [10]) == 1
