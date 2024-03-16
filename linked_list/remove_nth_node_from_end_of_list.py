@@ -12,7 +12,7 @@ Output: []
 
 '''
 #!/usr/bin/env python3
-
+from typing import Optional
 
 # Definition for singly-linked list.
 class ListNode:
@@ -22,16 +22,16 @@ class ListNode:
 
 class Solution:
     def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
-        length = 0
-        iterator = head
-        while iterator is not None:
-            iterator = iterator.next
-            length += 1
-        index_to_remove = length - n
-        if index_to_remove == 0:
+        previous = None
+        p1 = head
+        p2 = head
+        for _ in range(n):
+            p2 = p2.next
+        while p2 is not None:
+            previous = p1
+            p1 = p1.next
+            p2 = p2.next
+        if p1 == head:
             return head.next
-        iterator = head
-        for _ in range(index_to_remove-1):
-            iterator = iterator.next
-        iterator.next = None if iterator.next is None else iterator.next.next
+        previous.next = p1.next if p1 else None
         return head
